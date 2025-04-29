@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>StreamMe • Loading</title>
+    <meta http-equiv="refresh" content="0;url=../public/mainPages/login.html" />
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="../public/mainStyles/index.css" />
 </head>
 <body>
-
-<script type="module">
-    if (localStorage.getItem('loggedIn') === 'true') {
-        window.location.href = '/mainPages/main.html';
-    } else {
-        window.location.href = '/mainPages/login.html';
-    }
-</script>
-
-
+<div class="redirect-container">
+    <img src="../public/content/textures/logo.png" alt="StreamMe Logo" class="redirect-logo" />
+    <h1>404 Error</h1>
+    <p>We couldn't find what you were looking for.</p>
+    <a href="../public/mainPages/logIn.html" class="redirect-button">Go to Login Page</a>
+</div>
 </body>
 </html>
