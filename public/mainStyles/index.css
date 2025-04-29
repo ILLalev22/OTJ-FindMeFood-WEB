@@ -1,0 +1,99 @@
+:root {
+    --clr-bg: #f5f7fa;
+    --clr-card: rgba(255,255,255,0.9);
+    --clr-primary: #0084f4;
+    --clr-primary-dark: #2b385a;
+    --clr-text: #333;
+    --transition: 0.25s ease;
+    --radius: 12px;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%; width: 100%;
+    background: var(--clr-bg);
+}
+
+.page {
+    display: flex; flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    padding: 1rem;
+    text-align: center;
+}
+.logo {
+    height: 50px; max-width: 80%;
+}
+
+.hero {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    background: url('../content/textures/backroundMain.png') no-repeat center/cover;
+}
+
+.menuFrame {
+    width: 90%; max-width: 360px;
+    background: var(--clr-card);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#welcomeText {
+    font-size: 1.8rem;
+    color: var(--clr-text);
+    margin-bottom: 1.5rem;
+    min-height: 2.2rem;
+    transition: opacity var(--transition);
+}
+.fade {
+    opacity: 0;
+}
+
+.btn-group {
+    display: flex; flex-direction: column; gap: 1rem;
+}
+
+.btn {
+    display: block;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.btn.primary {
+    background: var(--clr-primary);
+    color: #fff;
+}
+.btn.primary:hover {
+    background: var(--clr-primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+}
+.btn.secondary:hover {
+    background: var(--clr-primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+    .menuFrame { padding: 1.5rem 1rem; }
+    #welcomeText { font-size: 1.5rem; }
+    .btn { padding: 0.65rem; }
+}
