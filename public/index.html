@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>StreamMe • Welcome</title>
-    <link rel="stylesheet" href="mainStyles/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>StreamMe • Loading</title>
 </head>
 <body>
-<div class="page">
-    <main class="hero">
-        <div class="menuFrame">
-            <h1 id="welcomeText">WELCOME</h1>
-            <div class="btn-group">
-                <a href="logIn.html" class="btn primary">Log In</a>
-                <a href="signUp.html" class="btn secondary">Sign Up</a>
-                <a href="#" class="btn secondary">Continue as Guest</a>
-            </div>
-        </div>
-    </main>
-</div>
+
+<script type="module">
+    if (localStorage.getItem('loggedIn') === 'true') {
+        window.location.href = 'mainPages/main.html'
+    } else {
+        window.location.href = 'mainPages/login.html'
+    }
+</script>
+
 </body>
 </html>

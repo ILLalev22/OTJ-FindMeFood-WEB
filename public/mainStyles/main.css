@@ -1,0 +1,56 @@
+/* styles/main.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #00854a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar img.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.sidebar .filter-section {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.sidebar .filter-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar input[type="range"] {
+    width: 100%;
+}
+
+#map {
+    width: 80%;
+    height: 100%;
+}

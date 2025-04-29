@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #008749;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    text-align: center;
+    width: 350px;
+}
+
+.auth-logo {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #ffc107;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: #008749;
+}
+
+/* Bottom Links */
+.bottom-links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Desktop Download Label */
+#downloadDesktop {
+    color: #ffc107;
+    font-size: 15px;
+    cursor: default;
+}
+
+/* Sign Up Link */
+#signUpLink {
+    color: white;
+    font-size: 15px;
+    text-decoration: none; /* <-- REMOVE UNDERLINE */
+    transition: color 0.3s ease;
+}
+
+#signUpLink:hover {
+    color: black;
+}
